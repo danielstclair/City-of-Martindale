@@ -1,0 +1,11 @@
+{
+  "name": "city-of-martindale",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.1",
+    "angular": "~1.4.0",
+    "normalize.css": "~3.0.2",
+    "angular-ui-router": "~0.2.13"
+  }
+}
