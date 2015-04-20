@@ -4,3 +4,45 @@
 @import "bower_components/normalize.css/normalize.css";
 // endbower
 @import "app/styles/color.scss";
+
+.logo {
+	width: 5em;
+
+}
+
+header {
+		h1 {
+			display: inline-block;
+		}
+		h3 {
+			display: inline-block;
+		}
+	}
+
+/** Extra Small Devices, Phones **/
+@media screen and (min-width:480px) {
+	/***nav***/
+	nav {
+		background-color: yellow;
+	}
+}
+
+/** Small Devices, Tablets **/
+@media screen and (min-width:768px) {
+	/***nav***/
+	nav {
+		background-color: blue;
+	}
+
+}
+
+/** Large Devices, Wide Screens **/
+@media screen and (min-width:1200px) {
+/***nav***/
+
+	nav {
+		background-color: red;
+	}
+}
+
+

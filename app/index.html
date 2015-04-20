@@ -31,9 +31,10 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header>
+        <img class="logo" src="images/firefox.png" alt="logo">
         <h1>City of Martindale</h1>
         <h3>Chamber of Commerce</h3>
-        <div class="row" ng-controller="NavCtrl">
+        <nav class="row" ng-controller="NavCtrl">
             <button class="ion-navicon-round button" ng-click="toggleNav()" ng-hide="menu"></button>
             <button class="ion-close-round button" ng-click="toggleNav()" ng-show="hideNav"></button>
             <ul ng-show="navLinks">
@@ -52,7 +53,7 @@
                     <li><a href="#">Martindale History</a></li>
                 </ul>
             </ul>
-        </div>
+        </nav>
     </header>
 
 
