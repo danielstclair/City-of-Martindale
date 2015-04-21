@@ -31,33 +31,41 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header>
-        <img class="logo" src="images/firefox.png" alt="logo">
-        <h1>City of Martindale</h1>
-        <h3>Chamber of Commerce</h3>
-        <nav class="row" ng-controller="NavCtrl">
-            <button class="ion-navicon-round button" ng-click="toggleNav()" ng-hide="menu"></button>
-            <button class="ion-close-round button" ng-click="toggleNav()" ng-show="hideNav"></button>
-            <ul ng-show="navLinks">
-                <li><a href="/home" ui-sref="home" class="nav-links">Home</a></li>
-                <li><a href="#" ui-sref="test" class="nav-links" ng-click="toggleAbout()" ng-mouseover="showAbout()">About Us</a></li>
-                <ul ng-show="aboutLinks">
-                    <li><a href="#">Lifestyle</a></li>
-                    <li><a href="#">Church Directory</a></li>
-                    <li><a href="#">Business Directory</a></li>
+        <section class= "background">
+     
+        <div class = "header-wrapper">
+<!--         <img class="logo" src="images/martindale_blue_logo.png" alt="logo"> -->
+            
+            <div class = "mobile-header">MARTINDALE</div>
+
+            <nav class="row" ng-controller="NavCtrl">
+                <button class="ion-navicon-round button" ng-click="toggleNav()" ng-hide="menu"></button>
+                <button class="ion-close-round button" ng-click="toggleNav()" ng-show="hideNav"></button>
+                <ul ng-show="navLinks">
+                    <li><a href="/home" ui-sref="home" class="nav-links">Home</a></li>
+                    <li><a href="#" ui-sref="test" class="nav-links" ng-click="toggleAbout()" ng-mouseover="showAbout()">About Us</a></li>
+                    <ul ng-show="aboutLinks">
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Church Directory</a></li>
+                        <li><a href="#">Business Directory</a></li>
+                    </ul>
+                    <li><a href="#" ui-sref="test" class="nav-links">Events and News</a></li>
+                    <li><a href="#" ui-sref="test" class="nav-links" ng-mouseover="showCity()" ng-click="toggleCity()">City Information</a></li>
+                    <ul ng-show="cityInfo">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">City Map</a></li>
+                        <li><a href="#">Martindale History</a></li>
+                    </ul>
                 </ul>
-                <li><a href="#" ui-sref="test" class="nav-links">Events and News</a></li>
-                <li><a href="#" ui-sref="test" class="nav-links" ng-mouseover="showCity()" ng-click="toggleCity()">City Information</a></li>
-                <ul ng-show="cityInfo">
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">City Map</a></li>
-                    <li><a href="#">Martindale History</a></li>
-                </ul>
-            </ul>
-        </nav>
+            </nav>
+        </div>
+
+            <h1>City of Martindale</h1>
+            <h3>Chamber of Commerce</h3>
+
+        </section>
+
     </header>
-
-
-
 
     <div ui-view></div>
 
