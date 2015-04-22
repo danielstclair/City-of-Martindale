@@ -5,67 +5,54 @@
 // endbower
 @import "app/styles/color.scss";
 
-// .logo {
-// 	width: 10em;
-// 	margin-top: 5px;
-// 	margin-left: 5px;
-// }
+.logo {
+	width: 10em;
+	margin-top: 5px;
+	margin-left: 5px;
+}
 
 .background {
-	background-image: url("../images/background_river.JPG");
-	background-repeat: no-repeat;
+	background-image: url("../images/confectionary.png");
+	// background-repeat: no-repeat;
 	height: 1000px;
-
+	color: RGBA(22, 119, 135, 1)
+	font-size: 25px;
 }
 
 .mobile-header {
-	height: 5em;
-	font-size: 2.1em;
-	display: inline-block;
-	color: white;
-	opacity: none;	
+	height: 3.5em;
+	background: rgba(22, 119, 135, 1);	
 }
 
-// header {
-// 	text-align: left;
-// 	}
+.logo-text {
+	// overflow: hidden;
+	// float: right;
+	// margin-top: 2.5em;
 
-header h1, h3 {
-	text-align: center;
-	color: white;
 }
 
 .row {
 	display: inline-block;
-	padding-left: 3em;
-	// border-bottom: solid 2px;
-
+	padding-left: 1em;
+	padding-top: 12px;
 }
 
 .row button {
 	color: white;
+	border: 3px solid white;
 }
 
 .header-wrapper {
 	border-bottom: 2px solid white;
-	background: rgba(103, 153, 158, 0.4);
-// 	background-image: -webkit-gradient(
-// 	linear,
-// 	left bottom,
-// 	left top,
-// 	color-stop(0.07, #F0F0F0),
-// 	color-stop(1, #474747)
-// );
-// background-image: -o-linear-gradient(top, #F0F0F0 7%, #474747 100%);
-// background-image: -moz-linear-gradient(top, #F0F0F0 7%, #474747 100%);
-// background-image: -webkit-linear-gradient(top, #F0F0F0 7%, #474747 100%);
-// background-image: -ms-linear-gradient(top, #F0F0F0 7%, #474747 100%);
-// background-image: linear-gradient(to top, #F0F0F0 7%, #474747 100%);
-
-	// opacity: 0.6	;
-
+	background: rgba(205,179,128,0.5);
+	height: 8em;
+	text-align: center;
 }
 
+.main-content {
+	background: rgba(248,248,255,0.5)
+	text-align: center;
+}
 
 /** Extra Small Devices, Phones **/
 @media screen and (min-width:480px) {
