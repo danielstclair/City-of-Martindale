@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>City of Martindale</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" type="text/css" href="/bower_components/normalize.css/normalize.css">
     <!-- endbower -->
     <!-- endbuild -->
-
-    <link rel="stylesheet" type="text/css" href="/bower_components/ionicons/css/ionicons.css">
-    <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
-
+<!-- 
+    <link rel="stylesheet" type="text/css" href="/bower_components/ionicons/css/ionicons.css"> -->
+<!--     <link rel="stylesheet" type="text/css" href="styles/skeleton.css"> -->
+    
 
 
     <!-- build:css styles/main.css -->
@@ -24,6 +25,7 @@
 
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
+
     <!-- endbuild -->
   </head>
   <body ng-app="app">
@@ -42,34 +44,55 @@
             </div>
         </header>
             
-            <div class = "mobile-header">
+        
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
 
-            <nav class="row" ng-controller="NavCtrl">
-                <button class="ion-navicon-round button" ng-click="toggleNav()" ng-hide="menu"></button>
-                <button class="ion-close-round button" ng-click="toggleNav()" ng-show="hideNav"></button>
-                <ul ng-show="navLinks">
-                    <li><a href="/home" ui-sref="home" class="nav-links">Home</a></li>
-                    <li><a href="#" ui-sref="test" class="nav-links" ng-click="toggleAbout()" ng-mouseover="showAbout()">About Us</a></li>
-                    <ul ng-show="aboutLinks">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Events and News</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About Us <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
                         <li><a href="#">Lifestyle</a></li>
                         <li><a href="#">Church Directory</a></li>
                         <li><a href="#">Business Directory</a></li>
-                    </ul>
-                    <li><a href="#" ui-sref="test" class="nav-links">Events and News</a></li>
-                    <li><a href="#" ui-sref="test" class="nav-links" ng-mouseover="showCity()" ng-click="toggleCity()">City Information</a></li>
-                    <ul ng-show="cityInfo">
+
+                      </ul>
+
+                    </li>
+
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">City Information <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">City Map</a></li>
                         <li><a href="#">Martindale History</a></li>
-                    </ul>
-                </ul>
+
+                      </ul>
+                      
+                    </li>
+
+                  </ul>
+
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
             </nav>
-            </div>
-        </div>
 
         <div class= "main-content">
             <h3>Why come to Martindale?</h3>
-            <p>Stumptown photo booth salvia, Wes Anderson hella hashtag scenester DIY. VHS Helvetica wolf, vinyl Godard mlkshk cred fingerstache organic forage food truck Marfa post-ironic disrupt banh mi. Bicycle rights occupy gentrify pour-over freegan, 90's chia you probably haven't heard of them pug Etsy listicle distillery. Keffiyeh bicycle rights VHS beard keytar mixtape. High Life letterpress street art, umami Carles butcher messenger bag Godard Odd Future lumbersexual mustache farm-to-table trust fund. Dreamcatcher vinyl cold-pressed, master cleanse fanny pack gentrify ethical fashion axe stumptown brunch banjo. Quinoa pug meggings, normcore flannel butcher whatever swag Intelligentsia heirloom cronut you probably haven't heard of them keffiyeh.</p>
+            <p>Stumptown photo booth salvia, Wes Anderson hella hashtag scenester DIY. VHS Helvetica wolf, vinyl Godard mlkshk cred fingerstache organic forage food truck Marfa post-ironic disrupt banh mi. Bicycle rights occupy gentrify pour-over freegan, 90's chia you probably haven't heard of them pug Etsy listicle distillery. Keffiyeh bicycle rights VHS beard keytar mixtape. High Life letterpress street art, umami Carles butcher messenger bag Godard Odd Future mustache farm-to-table trust fund. Dreamcatcher vinyl cold-pressed, master cleanse fanny pack gentrify ethical fashion axe stumptown brunch banjo. Quinoa pug meggings, normcore flannel butcher whatever swag Intelligentsia heirloom cronut you probably haven't heard of them keffiyeh.</p>
         </div>
 
         <div class = "main-page-images">
@@ -94,6 +117,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="/bower_components/angular/angular.js"></script>
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <!-- endbower -->
