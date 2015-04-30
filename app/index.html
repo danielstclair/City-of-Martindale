@@ -60,8 +60,8 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Events and News</a></li>
+                    <li class="active" ng-controller = 'HomeCtrl'><a ui-sref='home'>Home <span class="sr-only">(current)</span></a></li>
+                    <li><a ui-sref='events' ng-controller ='EventsCtrl'>Events and News</a></li>
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About Us <span class="caret"></span></a>
                       <ul class="dropdown-menu" role="menu">
@@ -89,6 +89,8 @@
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
             </nav>
+        
+   <main ui-view > 
 
         <div class= "main-content">
             <h3>Why come to Martindale?</h3>
@@ -101,6 +103,8 @@
             <img src = "images/silos_buildings.jpg">
             <p>Add some text about commercial real estate availability here</p>
         </div>
+
+    </main>
 
 
     <footer class="footer">
@@ -130,11 +134,6 @@
     </footer>
 
     </section>
-
-
-
-
-
 
 
     <!-- build:js scripts/vendor.js -->
